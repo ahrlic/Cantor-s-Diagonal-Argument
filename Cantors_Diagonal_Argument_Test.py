@@ -3,19 +3,22 @@ import unittest
 from Cantors_Diagonal_Argument import CDAFunction
 
 
-class testCDAFunction():
+class testCDAFunction(unittest.TestCase):
 
 
-    def test_nums():
+    def test_nums(self):
 
-        #CDAFunction = CDAFunction()
-
-        numbers = [round(random.uniform(0, 1), 12) for _ in range(50)]
+        CDA_Function = CDAFunction()
     
-        print(numbers)
+        numbers = [round(random.uniform(0, 1), 12) for _ in range(50)]
+
+        result = CDA_Function.calculate_arguments(numbers)
+
+        print(result)
 
 
-    test_nums()
+if __name__ == "__main__":
+    unittest.main()
      
         
    
