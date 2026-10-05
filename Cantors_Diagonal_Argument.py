@@ -4,13 +4,14 @@ class CDAFunction:
 
         new_number = ""
         index = 2
+        
 
         for i in range(len(numbers)):
 
             number = str(numbers[i])
 
             print(number)
-            print(number[index])
+           
 
             index += 1
 
